@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Lora", ui-serif, Georgia, serif;
+  --font-royal: "Cinzel", serif;
+  
+  --color-royal-olive: var(--theme-primary);
+  --color-deep-olive: var(--theme-primary-dark);
+  --color-olive-mist: var(--theme-mist);
+  --color-champagne-gold: var(--theme-accent-light);
+  --color-pale-gold: var(--theme-accent-pale);
+  --color-metallic-gold: var(--theme-accent);
+}
+
+:root {
+  /* Default: Royal */
+  --theme-primary: #3D412D;
+  --theme-primary-dark: #2D321D;
+  --theme-mist: #F8F9F2;
+  --theme-accent: #C5A028;
+  --theme-accent-light: #D4AF37;
+  --theme-accent-pale: #F3E5AB;
+}
+
+.theme-royal {
+  --theme-primary: #3D412D;
+  --theme-primary-dark: #2D321D;
+  --theme-mist: #F8F9F2;
+  --theme-accent: #C5A028;
+  --theme-accent-light: #D4AF37;
+  --theme-accent-pale: #F3E5AB;
+}
+
+.theme-sleek {
+  --theme-primary: #0F172A;
+  --theme-primary-dark: #020617;
+  --theme-mist: #F1F5F9;
+  --theme-accent: #0EA5E9;
+  --theme-accent-light: #38BDF8;
+  --theme-accent-pale: #E0F2FE;
+}
+
+.theme-minimal {
+  --theme-primary: #18181B;
+  --theme-primary-dark: #09090B;
+  --theme-mist: #FAFAFA;
+  --theme-accent: #52525B;
+  --theme-accent-light: #A1A1AA;
+  --theme-accent-pale: #F4F4F5;
+}
+
+.theme-classic {
+  --theme-primary: #450A0A;
+  --theme-primary-dark: #2D0606;
+  --theme-mist: #FFF1F2;
+  --theme-accent: #B45309;
+  --theme-accent-light: #D97706;
+  --theme-accent-pale: #FEF3C7;
+}
+
+@layer utilities {
+  .glass-olive {
+    background: rgba(248, 249, 242, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(61, 65, 45, 0.1);
+  }
+  .gold-gradient {
+    background: linear-gradient(135deg, var(--theme-accent-light) 0%, var(--theme-accent-pale) 45%, #FFFFFF 50%, var(--theme-accent-pale) 55%, var(--theme-accent) 100%);
+  }
+  .olive-gradient {
+    background: linear-gradient(135deg, var(--theme-primary) 0%, var(--theme-primary-dark) 100%);
+  }
+  .gold-text-gradient {
+    background: linear-gradient(to bottom right, var(--theme-primary), var(--theme-accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .piggy-fill {
+    transition: height 1s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+body {
+  background-color: #F8F9F2;
+  overflow-x: hidden;
+  font-family: var(--font-display);
+}
