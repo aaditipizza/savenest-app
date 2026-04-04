@@ -1,20 +1,19 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 💰 SaveNest
 
-# Run and deploy your AI Studio app
+SaveNest is a simple and intuitive savings tracker that helps you stay consistent with your financial goals.
 
-This contains everything you need to run your app locally.
+## 🌟 Why this app?
+Managing money can feel overwhelming. SaveNest makes it easy by letting you track your savings and stay motivated with clear progress.
 
-View your app in AI Studio: https://ai.studio/apps/68401ca8-f7a9-4bec-8d0d-a08f1abe3d5a
+## 🚀 What you can do
+- Add and track your savings
+- Set a goal and monitor progress
+- Build a consistent saving habit
+- View your data in real-time
 
-## Run Locally
+## 🛠 Built With
+- AI Studio (Frontend)
+- Supabase (Backend & Database)
 
-**Prerequisites:**  Node.js
-
-
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📌 Status
+Currently improving features and UI 🚧
